@@ -111,6 +111,10 @@
 
 @theme {
   --default-font-family: "poppins", "sans-serif";
+  --color-black: #030303;
+  --color-blue-400: #18b7f2;
+  --color-blue-500: #156ddf;
+  --color-blue-600: #1122cb;
 }
 
 @layer base {
@@ -118,6 +122,50 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply min-h-svh bg-gradient-to-tl from-slate-200 via-slate-100 to-slate-50;
   }
+  body::-webkit-scrollbar {
+    @apply w-1.5;
+  }
+  body::-webkit-scrollbar-track {
+    @apply bg-slate-200;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    @apply bg-black rounded-xl;
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-700;
+  }
+  main::-webkit-scrollbar {
+    @apply w-0;
+  }
+  aside > ul::-webkit-scrollbar {
+    @apply w-0;
+  }
+  img {
+    @apply w-full h-auto;
+  }
+  h1 {
+    @apply lg:text-7xl md:text-5xl text-3xl font-bold tracking-wide uppercase;
+  }
+  h3 {
+    @apply text-lg font-semibold;
+  }
+  h4 {
+    @apply text-base font-medium;
+  }
+}
+
+@utility x-animation {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+@utility x-navbar {
+  @apply block rounded-xl py-2.5 px-6;
+}
+
+@utility x-sidebar-item {
+  @apply block py-2 px-5 rounded-md shadow-slate-100/5 hover:shadow-lg hover:bg-slate-50 hover:text-black  x-animation;
 }

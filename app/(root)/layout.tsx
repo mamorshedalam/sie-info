@@ -1,14 +1,12 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../../components/Header";
 export default function Layout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <main>
+    <section className="relative">
       <Header />
       {children}
-      <Footer />
-    </main>
+    </section>
   );
 }
