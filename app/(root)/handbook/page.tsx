@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Page() {
   return (
     <div className="w-full flex flex-wrap">
-      <aside className="sticky top-[85px] w-[240px] h-[calc(100vh-85px)] border-r-2 border-slate-700/15 text-slate-700 bg-slate-200 text-sm px-4 py-6 z-10">
+      <aside className="md:sticky fixed md:block hidden top-[85px] w-[240px] h-[calc(100vh-85px)] border-r-2 border-slate-700/15 text-slate-700 bg-slate-200 text-sm px-4 py-6 z-10">
         <ul className="space-y-2.5 overflow-y-auto h-full">
           <li>
             <Link href={`#Regulations`} className="x-sidebar-item">
@@ -48,12 +48,12 @@ export default function Page() {
         </ul>
       </aside>
       <main className="basis-0 grow flex flex-wrap">
-        <div className="basis-0 grow space-y-6 px-6 py-9">
+        <div className="basis-0 grow md:space-y-6 space-y-4 md:px-6 px-3 md:py-9 py-5">
           <h3 id="Regulations">
             Regulations on International Student Management of Wuhan Institute
             of Technology(Trial)
           </h3>
-          <div id="General-Provisions" className="space-y-3">
+          <div id="General-Provisions" className="md:space-y-3 space-y-2">
             <h4>Chapter 1 General Provisions</h4>
             <p>
               Article 1: In order to standardize the recruitment, cultivation,
@@ -93,7 +93,7 @@ export default function Page() {
               discussion and decision.
             </p>
           </div>
-          <div id="Management-System" className="space-y-3">
+          <div id="Management-System" className="md:space-y-3 space-y-2">
             <h4>Chapter 2 Management System</h4>
             <p>
               Article 5: The School of International Education is the
@@ -224,15 +224,21 @@ export default function Page() {
             </p>
           </div>
         </div>
-        <div className="sticky top-[85px] w-[210px] h-[calc(100vh-85px)] text-slate-700 text-xs px-4 py-6 z-10">
+        <div className="md:block hidden sticky top-[85px] w-[210px] h-[calc(100vh-85px)] text-slate-700 text-xs px-4 py-6 z-10">
           <ul className="space-y-1 overflow-y-auto h-full pl-2 border-l-2 border-slate-400">
             <li>
-              <Link href={`#General-Provisions`} className="x-sidebar-item py-1 hover:bg-transparent">
+              <Link
+                href={`#General-Provisions`}
+                className="x-sidebar-item py-1 hover:bg-transparent"
+              >
                 General Provisions
               </Link>
             </li>
             <li>
-              <Link href={`#Management-System`} className="x-sidebar-item py-1 hover:bg-transparent">
+              <Link
+                href={`#Management-System`}
+                className="x-sidebar-item py-1 hover:bg-transparent"
+              >
                 Management System
               </Link>
             </li>
@@ -245,22 +251,34 @@ export default function Page() {
               </Link>
             </li>
             <li>
-              <Link href={`#`} className="x-sidebar-item py-1 hover:bg-transparent">
+              <Link
+                href={`#`}
+                className="x-sidebar-item py-1 hover:bg-transparent"
+              >
                 Teaching and Training Management
               </Link>
             </li>
             <li>
-              <Link href={`#`} className="x-sidebar-item py-1 hover:bg-transparent">
+              <Link
+                href={`#`}
+                className="x-sidebar-item py-1 hover:bg-transparent"
+              >
                 Student Management
               </Link>
             </li>
             <li>
-              <Link href={`#`} className="x-sidebar-item py-1 hover:bg-transparent">
+              <Link
+                href={`#`}
+                className="x-sidebar-item py-1 hover:bg-transparent"
+              >
                 Scholarships
               </Link>
             </li>
             <li>
-              <Link href={`#`} className="x-sidebar-item py-1 hover:bg-transparent">
+              <Link
+                href={`#`}
+                className="x-sidebar-item py-1 hover:bg-transparent"
+              >
                 Supplementary Provisions
               </Link>
             </li>
