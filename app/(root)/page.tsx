@@ -14,7 +14,7 @@ export default function Home() {
           <br />
           Technology
         </h1>
-        <p className="lg:text-3xl md:text-2xl text-base font-medium mt-2">School of International Studies</p>
+        <p className="lg:text-3xl md:text-2xl text-base font-medium mt-2">School of International Education</p>
       </div>
     </section>
   );

@@ -27,22 +27,27 @@ export default function Header() {
         >
           <ul className="lg:flex hidden items-center justify-end gap-2 h-full">
             <li>
-              <Link className="x-navbar" href={``}>
+              <Link className="x-navbar" href={`/link`}>
                 Links
               </Link>
             </li>
             <li>
-              <Link className="x-navbar" href={``}>
+              <Link className="x-navbar" href={`/form`}>
+                Form
+              </Link>
+            </li>
+            <li>
+              <Link className="x-navbar" href={`/news`}>
                 News
               </Link>
             </li>
             <li>
-              <Link className="x-navbar" href={``}>
+              <Link className="x-navbar" href={`/event`}>
                 Events
               </Link>
             </li>
             <li>
-              <Link className="x-navbar" href={``}>
+              <Link className="x-navbar" href={`/academic`}>
                 Academics
               </Link>
             </li>
@@ -52,7 +57,7 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link className="x-navbar" href={``}>
+              <Link className="x-navbar" href={`/campus`}>
                 Campus Life
               </Link>
             </li>
