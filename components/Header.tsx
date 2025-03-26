@@ -18,10 +18,10 @@ export default function Header() {
         } top-0 md:p-4 p-2 md:pb-0 z-50`}
       >
         <div className="flex justify-between items-center max-w-[1500px] w-full mx-auto md:rounded-2xl rounded-lg">
-          <div className="md:px-5 px-2 py-2">
-            <Link onClick={() => setSidebar(false)} href={`/`}>
+          <div className="md:px-5 px-2 py-2 md:w-52 w-40">
+            {/* <Link onClick={() => setSidebar(false)} href={`/`}>
               <img src="/logo.png" alt="WIT logo" className="md:w-52 w-40" />
-            </Link>
+            </Link> */}
           </div>
           <div
             className={`basis-0 grow md:block hidden ${

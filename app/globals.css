@@ -167,7 +167,7 @@
 }
 
 @utility x-navbar-item {
-  @apply block rounded-xl md:py-2.5 py-1.5 px-6;
+  @apply block rounded-xl md:py-3 py-2 px-6;
 }
 
 @utility x-sidebar-item {
