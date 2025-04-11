@@ -44,7 +44,7 @@ export default function Header() {
       <aside
         className={`absolute left-0 w-full bg-gradient-to-br from-blue-400 to-blue-500 text-white x-animation z-50 ${
           sidebar
-            ? "max-h-[25rem] py-3 opacity-100 visible"
+            ? "max-h-[35rem] py-3 opacity-100 visible"
             : "max-h-0 opacity-0 invisible"
         }
         ${pathname == "/" ? "pt-14" : ""}`}
