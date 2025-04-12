@@ -21,7 +21,7 @@ export default function Page() {
     },
   ];
   return (
-    <section className="space-y-3 md:px-6 px-3 md:py-9 py-5">
+    <section className="x-page-container">
       {data &&
         data.map((item, index) => (
           <div

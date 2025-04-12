@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <section className="p-9 space-y-4">
+    <section className="x-page-container">
       <div className="flex flex-col">
         <h2 className="font-medium text-lg mb-2">Police Station Location :</h2>
         <p>
@@ -10,21 +10,21 @@ export default function Page() {
         <a
           href="https://ditu.amap.com/place/B0J37ZERSJ"
           target="_black"
-          className="underline text-blue-500 anywhere-words"
+          className="x-link-a"
         >
           Amap location
         </a>
         <a
           href="https://j.map.baidu.com/f9/QdQK"
           target="_black"
-          className="underline text-blue-500 anywhere-words"
+          className="x-link-a"
         >
           Baidu Map location
         </a>
         <a
           href="https://maps.apple.com/place?auid=1118655455556403&lsp=57879"
           target="_black"
-          className="underline text-blue-500 anywhere-words"
+          className="x-link-a"
         >
           Apple Map location
         </a>
@@ -32,7 +32,7 @@ export default function Page() {
           <span className="font-medium">Contact Number:</span>{" "}
           <a
             href="tel:027-87801110"
-            className="underline text-blue-500 anywhere-words"
+            className="x-link-a"
           >
             027 - 87801110
           </a>
@@ -46,12 +46,19 @@ export default function Page() {
           <li>- Get off at the Chuping Road Station (1 stops after)</li>
           <li>- Walk 633m</li>
         </ul>
-        <p className="mt-2"><span className="font-medium">Duration:</span> 45 minutes</p>
+        <p className="mt-2">
+          <span className="font-medium">Duration:</span> 45 minutes
+        </p>
       </div>
       <div className="flex flex-col">
         <h2 className="font-medium text-lg mb-2">Working Hours :</h2>
         <p>
-          14:00 - 17:00 PM on weekdays
+          14:00 - 17:00 PM on weekdays <br />
+          <i className="text-gray-500 text-sm">
+            Since there is only one shift available for doing the Police
+            Registration, students are allowed to do the Police Registration
+            before April 23.
+          </i>
         </p>
       </div>
       <div className="flex flex-col">

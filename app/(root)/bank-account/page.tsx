@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <section className="p-9 space-y-4">
+    <section className="x-page-container">
       <div className="flex flex-col">
         <h2 className="font-medium text-lg mb-2">Bank Location :</h2>
         <p>
@@ -11,21 +11,21 @@ export default function Page() {
         <a
           href="https://ditu.amap.com/place/B001B15ZZO"
           target="_black"
-          className="underline text-blue-500 anywhere-words"
+          className="x-link-a"
         >
           Amap location
         </a>
         <a
           href="https://j.map.baidu.com/12/Hk5"
           target="_black"
-          className="underline text-blue-500 anywhere-words"
+          className="x-link-a"
         >
           Baidu Map location
         </a>
         <a
           href="https://maps.apple.com/place?auid=1117162367222388&lsp=57879"
           target="_black"
-          className="underline text-blue-500 anywhere-words"
+          className="x-link-a"
         >
           Apple Map location
         </a>

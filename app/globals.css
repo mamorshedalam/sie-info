@@ -117,6 +117,10 @@
   --color-blue-600: #1122cb;
 }
 
+@utility anywhere-words {
+  overflow-wrap: anywhere;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -145,7 +149,7 @@
     @apply w-0;
   }
   button,
-  a{
+  a {
     @apply cursor-pointer;
   }
   img {
@@ -166,10 +170,14 @@
   @apply transition-all duration-300 ease-in-out;
 }
 
+@utility x-page-container {
+  @apply lg:p-9 p-5 md:space-y-5 space-y-3;
+}
+
 @utility x-navbar-item {
   @apply block rounded-xl md:py-3 py-2 px-6;
 }
-@utility x-navbar-subItem{
+@utility x-navbar-subItem {
   @apply block text-sm md:text-center rounded-xl py-2 px-4 md:ml-0 ml-5 md:hover:bg-slate-100/10 x-animation;
 }
 
@@ -177,6 +185,6 @@
   @apply block py-2 px-5 rounded-md shadow-slate-100/5 hover:shadow-lg hover:bg-slate-50 hover:text-black  x-animation;
 }
 
-@utility anywhere-words{
-  overflow-wrap: anywhere
+@utility x-link-a {
+  @apply underline text-blue-500 anywhere-words w-fit;
 }

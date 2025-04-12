@@ -38,7 +38,7 @@ const poppins = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Hello Uni",
+  title: "你好 武工大",
   description:
     "Website of WIT department of SIE. This website is for shearing information with students.",
 };

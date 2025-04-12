@@ -1,27 +1,27 @@
 export default function Page() {
   return (
-    <section className="p-9 space-y-4">
+    <section className="x-page-container">
       <div className="flex flex-col">
         <h2 className="font-medium text-lg mb-2">Citizen's Home Location :</h2>
         <p>Citizens’ Home, No. 117 Jinqiao Road, Hankou</p>
         <a
           href="https://ditu.amap.com/place/B001B19JAC"
           target="_black"
-          className="underline text-blue-500 anywhere-words"
+          className="x-link-a"
         >
           Amap location
         </a>
         <a
           href="https://j.map.baidu.com/e6/Yg"
           target="_black"
-          className="underline text-blue-500 anywhere-words"
+          className="x-link-a"
         >
           Baidu Map location
         </a>
         <a
           href="https://maps.apple.com/place?auid=1117162367387364&lsp=57879"
           target="_black"
-          className="underline text-blue-500 anywhere-words"
+          className="x-link-a"
         >
           Apple Map location
         </a>

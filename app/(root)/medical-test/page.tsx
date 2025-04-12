@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <section className="p-9 space-y-4">
+    <section className="x-page-container">
       <div className="flex flex-col">
         <h2 className="font-medium text-lg mb-2">Medical Location :</h2>
         <p>
@@ -9,21 +9,21 @@ export default function Page() {
         <a
           href="https://ditu.amap.com/place/B0HUNS9PP8"
           target="_black"
-          className="underline text-blue-500 anywhere-words"
+          className="x-link-a"
         >
           Amap location
         </a>
         <a
           href="https://j.map.baidu.com/a8/uBwc"
           target="_black"
-          className="underline text-blue-500 anywhere-words"
+          className="x-link-a"
         >
           Baidu Map location
         </a>
         <a
           href="https://maps.apple.com/place?auid=1118493791128365&lsp=57879"
           target="_black"
-          className="underline text-blue-500 anywhere-words"
+          className="x-link-a"
         >
           Apple Map location
         </a>
@@ -31,7 +31,7 @@ export default function Page() {
           <span className="font-medium">Contact Number:</span>{" "}
           <a
             href="tel:027-87384283"
-            className="underline text-blue-500 anywhere-words"
+            className="x-link-a"
           >
             027 - 87384283
           </a>

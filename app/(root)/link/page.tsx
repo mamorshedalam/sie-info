@@ -1,8 +1,12 @@
 export default function Page() {
   const data = [
     {
-      title: "Student Portal",
-      url: "http://jwxt.wit.edu.cn/jsxsd/",
+      title: "Buying Insurance",
+      url: "www.lxbx.net",
+    },
+    {
+      title: "Student Education Portal",
+      url: "http://jwxt.wit.edu.cn/jsxsd",
     },
     {
       title: "Converged Portal",
@@ -14,11 +18,11 @@ export default function Page() {
     },
     {
       title: "Tuition payment platform",
-      url: "http://cwwsjf.wit.edu.cn/wsjf/",
+      url: "http://cwwsjf.wit.edu.cn/wsjf",
     },
   ];
   return (
-    <section className="space-y-3 md:px-6 px-3 md:py-9 py-5">
+    <section className="x-page-container">
       {data &&
         data.map((item, index) => (
           <div
@@ -28,7 +32,7 @@ export default function Page() {
             <p>{item.title} :</p>
             <a
               href={item.url}
-              className="underline text-blue-500 anywhere-words"
+              className="x-link-a"
               target="_black"
             >
               {item.url}
